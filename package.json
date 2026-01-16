@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node server.js",
+    "dev": "node server.js",
     "test": "node cli.js verify examples/basic/basic-policy.json",
     "verify": "node cli.js verify"
   },
