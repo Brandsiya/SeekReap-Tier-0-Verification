@@ -1,1 +1,20 @@
-[PASTE THE ENTIRE package.json CONTENT ABOVE]
+{
+  "name": "seekreap-tier0-verification",
+  "version": "1.0.0",
+  "description": "SeekReap Tier 0 Verification System",
+  "main": "cli.js",
+  "bin": {
+    "seekreap-verify": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js version",
+    "test": "node cli.js verify examples/test.json",
+    "verify": "node cli.js verify"
+  },
+  "keywords": ["verification", "security", "tier0"],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}

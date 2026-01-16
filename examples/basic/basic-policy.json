@@ -1,1 +1,9 @@
-[PASTE THE ENTIRE basic-policy.json CONTENT ABOVE]
+{
+  "name": "basic-verification-policy",
+  "version": "1.0.0",
+  "description": "A basic SeekReap verification policy",
+  "metadata": {
+    "created": "2024-01-16",
+    "author": "SeekReap"
+  }
+}

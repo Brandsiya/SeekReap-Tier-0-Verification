@@ -1,1 +1,9 @@
-[PASTE THE ENTIRE render.yaml CONTENT ABOVE]
+services:
+  - type: web
+    name: seekreap-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: node cli.js version
+    envVars:
+      - key: NODE_ENV
+        value: production
