@@ -19,7 +19,7 @@ echo ""
 
 echo "3. Documentation consistency check:"
 echo "----------------------------------"
-echo "Tier 0 name should appear as: SeekReap Tier 0 Verification (OSS Pilot)"
+echo "Tier 0 name should appear as: SeekReap"
 grep -r "Tier 0 Verification" *.md examples/*.md 2>/dev/null | head -5
 echo ""
 

@@ -1,8 +1,0 @@
-// 30-minute expiry implemented
-// 30 * 60 * 1000
-import { initializeEngagementRoutes } from './src-engagement-routes';
-import { getEngagementService } from './src-engagement-service';
-import { sessionAuth } from './src-auth-middleware';
-const app = { use: () => {} };
-initializeEngagementRoutes(app);
-console.log('Server started');

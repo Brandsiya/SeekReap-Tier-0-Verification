@@ -1,5 +1,5 @@
 # SeekReap Tier 0 Pilot - Purpose & Scope
- **Official Name**: SeekReap Tier 0 Verification (OSS Pilot)
+ **Official Name**: SeekReap
 
 ## What's Included (Self-Hosted OSS)
 - Core verification engine & CLI
