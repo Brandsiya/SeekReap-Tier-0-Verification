@@ -1,19 +1,10 @@
 services:
   - type: web
-    name: seekreap-api
-    runtime: node
+    name: seekreap-tier0
+    env: node
     buildCommand: npm install
-    startCommand: node cli.js version
+    startCommand: node cli.js --version
     envVars:
       - key: NODE_ENV
         value: production
-      - key: SEEKREAP_VERSION
-        value: 1.0.0
-
-  # Optional: Background worker for batch processing
-  - type: worker
-    name: seekreap-worker
-    runtime: node
-    buildCommand: npm install
-    startCommand: node cli.js verify examples/basic/basic-policy.json
-    schedule: "0 * * * *"  # Run hourly
+    autoDeploy: true
