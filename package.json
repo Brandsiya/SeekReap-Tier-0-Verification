@@ -2,9 +2,8 @@
   "name": "seekreap-tier0-root",
   "version": "1.0.0",
   "private": true,
+  "description": "Root package for Render deployment",
   "scripts": {
-    "start": "cd src && node server.js",
-    "install": "cd src && npm install",
-    "test": "cd src && npm test"
+    "postinstall": "echo 'Root install complete'"
   }
 }

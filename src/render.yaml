@@ -2,8 +2,10 @@ services:
   - type: web
     name: seekreap-tier0-verification
     env: node
-    rootDirectory: src
     buildCommand: npm install
     startCommand: npm start
-    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
     autoDeploy: true
+    branch: master
