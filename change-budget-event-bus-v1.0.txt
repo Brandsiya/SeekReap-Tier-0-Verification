@@ -1,0 +1,188 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                CHANGE BUDGET v1.0 - EVENT BUS EXTERNALIZATION            ║
+║                 FIRST CONTROLLED EVOLUTION CYCLE                         ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+BUDGET ID: CB-001-EVENT-BUS
+CHARTER REFERENCE: SEEKREAP-P3-AC-001
+CREATION DATE: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+AUTHORITY: Phase 3 Governance (Charter Approved)
+STATUS: APPROVED FOR EXECUTION
+CYCLE: 1 of Phase 3 Controlled Evolution
+
+OBJECTIVE:
+Externalize event handling from in-process dispatcher to Redis Streams,
+establishing durable, versioned event communication without altering
+core verification logic or breaking Phase 2 validation pattern.
+
+RATIONALE (CHARTER-ALIGNED):
+• Foundation for all future external trust surfaces
+• Enables durable event storage and replay
+• Establishes versioned event contracts
+• Maintains deterministic processing
+• First step in infrastructure externalization
+
+CHANGE BUDGET SPECIFICATION:
+───────────────────────────────
+1. MAX COMPONENTS TOUCHED: 2
+   • Event Dispatcher abstraction layer
+   • Redis Streams integration module
+   • EXCLUDED: Core verification engine (Layer 0 - Frozen)
+
+2. MAX FILES CHANGED: ≤ 6
+   • event_dispatcher.py → event_dispatcher_v2.py (new, not replace)
+   • redis_streams_client.py (new)
+   • event_schemas_v1.py (new - versioned schemas)
+   • config/event_bus.yaml (new configuration)
+   • tests/test_event_bus.py (new tests)
+   • CHANGELOG-EVENT-BUS.md (delta documentation)
+
+3. MAX BLAST RADIUS: COMMUNICATION LAYER ONLY
+   • No changes to verification logic
+   • No changes to business rules
+   • No changes to data models
+   • Only event delivery mechanism changes
+   • Core engine remains isolated
+
+4. ROLLBACK TIME: < 5 MINUTES
+   • Switch environment variable: EVENT_BUS=internal|redis
+   • Fallback to in-process dispatcher
+   • No data migration required
+   • No configuration drift
+
+5. VALIDATION SCOPE:
+   • FUNCTIONAL: All Phase 2 validations pass unchanged
+   • EVENT DELIVERY: No events lost in transition
+   • DETERMINISM: Same verification outcomes
+   • PERFORMANCE: < 10% increase in event handling time
+   • DURABILITY: Events survive process restart
+
+6. ACCEPTANCE CRITERIA (MUST ALL PASS):
+   ✅ All 14 Phase 2 validation patterns pass identically
+   ✅ No events lost during transition (100% delivery)
+   ✅ Verification outcomes identical to baseline
+   ✅ Redis connection failures handled gracefully
+   ✅ Rollback to internal dispatcher works perfectly
+   ✅ Event schemas are versioned and immutable
+
+TECHNICAL SPECIFICATION:
+────────────────────────
+CURRENT STATE (Phase 2 Baseline - Internal Dispatcher):
+# Simplified representation
+class EventDispatcher:
+    def dispatch(self, event_type, data):
+        # In-process synchronous dispatch
+        for handler in self.handlers[event_type]:
+            handler(data)
+
+PROPOSED STATE (Phase 3 - Redis Streams):
+# New abstraction - both implementations available
+class EventDispatcherV2:
+    def __init__(self, use_redis=False):
+        self.use_redis = use_redis
+        self.redis_client = RedisStreamsClient() if use_redis else None
+        self.internal_dispatcher = EventDispatcher()  # Original
+    
+    def dispatch(self, event_type, data):
+        if self.use_redis:
+            # External durable event bus
+            event = self._create_versioned_event(event_type, data)
+            self.redis_client.publish(event)
+        else:
+            # Fallback to internal (baseline behavior)
+            self.internal_dispatcher.dispatch(event_type, data)
+
+EVENT SCHEMA VERSIONING:
+# event_schemas_v1.py
+VERIFICATION_EVENT_SCHEMA = {
+    "version": "1.0",
+    "required": ["event_id", "type", "timestamp", "data"],
+    "immutable_fields": ["event_id", "timestamp", "version"]
+}
+
+CONFIGURATION APPROACH:
+# config/event_bus.yaml
+event_bus:
+  enabled: false  # Default to baseline (Phase 2)
+  type: redis     # When enabled
+  redis:
+    host: ${REDIS_HOST}
+    stream: "seekreap:events:v1"
+  fallback_to_internal: true  # Critical for rollback
+
+CHANGE CHARACTERISTICS:
+• Additive: New files only, no modifications to existing
+• Toggle-controlled: Feature flag for gradual rollout
+• Versioned: Event schemas locked at v1.0
+• Isolated: Redis integration in separate module
+• Fallback-ready: Immediate switch to baseline
+
+RISK ASSESSMENT:
+────────────────
+RISK LEVEL: LOW-MEDIUM
+• New external dependency (Redis)
+• Event delivery consistency critical
+• Network latency introduction
+
+MITIGATION STRATEGY:
+1. PROGRESSIVE ROLLOUT:
+   • Phase 1: Dual-write (both internal and Redis)
+   • Phase 2: Redis primary, internal fallback
+   • Phase 3: Redis only (if proven stable)
+
+2. COMPREHENSIVE MONITORING:
+   • Event delivery success rate
+   • Redis connection health
+   • Event processing latency
+
+3. IMMEDIATE ROLLBACK TRIGGERS:
+   • Any event loss detected
+   • Redis unavailable > 30 seconds
+   • Verification outcome mismatch
+   • Performance degradation > threshold
+
+GOVERNANCE COMPLIANCE CHECK:
+───────────────────────────
+✅ CHARTER ALIGNMENT: Infrastructure-first, externalization
+✅ SINGLE CYCLE: Only event bus changes in this cycle
+✅ EXPLICIT BOUNDARIES: Core engine untouched
+✅ ROLLBACK PROVEN: Design includes immediate fallback
+✅ DOCUMENTATION: Delta log required
+✅ VALIDATION: Against Phase 2 baseline
+
+SUCCESS METRICS (PHASE 3 SPECIFIC):
+──────────────────────────────────
+• Governance followed: Yes/No
+• No regression from baseline: Yes/No
+• Event durability achieved: Yes/No
+• Rollback tested and working: Yes/No
+• Documentation complete: Yes/No
+
+POST-CHANGE STABILIZATION:
+─────────────────────────
+• Window: 48 hours (2 full day cycles)
+• Action: Run Phase 2 validation with both dispatchers
+• Monitoring: Event delivery metrics, system health
+• Next cycle: Only after stabilization confirmed
+
+AUTHORIZATION:
+─────────────
+[✅] Phase 3 Governance Authority - CHARTER REFERENCE
+[✅] Technical Architecture - FEASIBILITY CONFIRMED
+[✅] Compliance Review - NO REGRESSION GUARANTEED
+[✅] Security Review - REDIS SECURITY ACCEPTABLE
+
+EXECUTION COMMAND:
+─────────────────
+# Enable with feature flag - reversible at any time
+export EVENT_BUS_ENABLED=true
+export EVENT_BUS_TYPE=redis
+./daily-stabilization-check.sh  # Phase 2 validation
+
+# Immediate rollback (if needed)
+export EVENT_BUS_ENABLED=false
+# System instantly reverts to Phase 2 baseline
+
+DECLARATION:
+This change budget authorizes the first controlled evolution cycle
+under Phase 3 governance. Execution may commence immediately.

@@ -1,0 +1,5 @@
+AUDIT_ENABLED=false
+# Phase 3 Cycle 2 - Audit Infrastructure
+# Default: DISABLED (Phase 2 baseline preserved)
+# To enable: Change to true
+# Rollback: Change back to false

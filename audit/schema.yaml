@@ -1,0 +1,21 @@
+AuditEvent:
+  required_fields:
+    - event_id
+    - subject_type
+    - subject_id
+    - rule_id
+    - rule_version
+    - evaluation_result
+    - evidence_hash
+    - timestamp_utc
+    - system_version
+  types:
+    event_id: "UUID v4"
+    subject_type: "enum:advertiser|campaign|creative"
+    subject_id: "string"
+    rule_id: "string"
+    rule_version: "semver"
+    evaluation_result: "enum:pass|fail|conditional"
+    evidence_hash: "sha256"
+    timestamp_utc: "RFC3339"
+    system_version: "semver"

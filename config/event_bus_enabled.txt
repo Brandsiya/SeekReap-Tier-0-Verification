@@ -1,0 +1,5 @@
+EVENT_BUS_ENABLED=false
+# Phase 3 Cycle 1 - Event Bus Externalization
+# Default: DISABLED (Phase 2 baseline preserved)
+# To enable: Change to true
+# Rollback: Change back to false

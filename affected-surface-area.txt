@@ -1,0 +1,23 @@
+AFFECTED SURFACE AREA MAP:
+• NEW FILES (6 maximum):
+  1. event_dispatcher_v2.py - New abstraction layer
+  2. redis_streams_client.py - Redis integration
+  3. event_schemas_v1.py - Versioned event contracts
+  4. config/event_bus.yaml - Configuration
+  5. tests/test_event_bus.py - Validation tests
+  6. CHANGELOG-EVENT-BUS.md - Delta documentation
+
+• MODIFIED FILES: 0 (Zero - additive only)
+• TOUCHED COMPONENTS: 2 (Event dispatcher, Redis client)
+• EXCLUDED COMPONENTS: Core verification engine
+• BLAST RADIUS: Communication layer only
+
+INTEGRATION POINTS:
+• Environment variable: EVENT_BUS_ENABLED
+• Configuration file: config/event_bus.yaml
+• Event dispatch calls (intercepted by V2 abstraction)
+
+ROLLBACK SURFACE:
+• Remove EVENT_BUS_ENABLED environment variable
+• Delete 6 new files listed above
+• System returns to exact Phase 2 baseline

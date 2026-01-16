@@ -1,0 +1,40 @@
+{
+  "name": "seekreap-verify",
+  "version": "1.0.0",
+  "description": "SeekReap Tier 0 Verification System",
+  "main": "cli.js",
+  "bin": {
+    "seekreap-verify": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "verify": "node cli.js verify",
+    "test": "echo 'Running tests...' && node cli.js verify examples/basic/basic-policy.json",
+    "clean": "rm -rf node_modules",
+    "docs": "echo 'Documentation available in docs/'"
+  },
+  "keywords": [
+    "verification",
+    "security",
+    "boundary",
+    "tier0",
+    "seekreap"
+  ],
+  "author": "Brandsiya",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brandsiya/SeekReap.git"
+  },
+  "homepage": "https://github.com/Brandsiya/SeekReap#readme",
+  "bugs": {
+    "url": "https://github.com/Brandsiya/SeekReap/issues"
+  },
+  "dependencies": {
+    "commander": "^7.2.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

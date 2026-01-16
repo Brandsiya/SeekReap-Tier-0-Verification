@@ -1,0 +1,51 @@
+#!/bin/bash
+# Cycle 3 Enhanced Server with Rate Limiting
+# Governance: Maintains all Cycle 1-2 constraints
+
+# Check feature toggle
+if [ ! -f "config/query_api.txt" ]; then
+    echo "HTTP/1.1 503 Service Unavailable"
+    echo "Content-Type: application/json"
+    echo ""
+    echo '{"error":"Query API disabled"}'
+    exit 0
+fi
+
+# Log to audit system if available
+if [ -f "audit/append_only_writer.sh" ]; then
+    echo "[$(date)] API Request: $REQUEST_PATH" >> audit/logs/api_access.log
+fi
+
+# === CYCLE 3: RATE LIMITING ===
+# Determine scope for rate limiting
+SCOPE="unknown"
+TOKEN="anonymous"
+
+if [[ "$REQUEST_PATH" =~ ^/api/v1/platform/ ]]; then
+    SCOPE="platform"
+    # Extract token from Authorization header
+    if [[ -n "$HTTP_AUTHORIZATION" ]]; then
+        TOKEN="${HTTP_AUTHORIZATION//[^a-zA-Z0-9]/_}"
+    fi
+elif [[ "$REQUEST_PATH" =~ ^/api/v1/regulator/ ]]; then
+    SCOPE="regulator"
+    if [[ -n "$HTTP_AUTHORIZATION" ]]; then
+        TOKEN="${HTTP_AUTHORIZATION//[^a-zA-Z0-9]/_}"
+    fi
+fi
+
+# Apply rate limit (except for health endpoint)
+if [[ "$REQUEST_PATH" != "/api/v1/audit/health" ]]; then
+    RATE_RESULT=$(./api/v1/rate_limiter.sh "$SCOPE" "$TOKEN")
+    if [[ "$RATE_RESULT" == DENY* ]]; then
+        echo "HTTP/1.1 429 Too Many Requests"
+        echo "Content-Type: application/json"
+        echo "Retry-After: 3600"
+        echo ""
+        echo '{"error":"Rate limit exceeded","scope":"'"$SCOPE"'","retry_after_seconds":3600}'
+        exit 0
+    fi
+fi
+
+# Route to router (original Cycle 2 functionality)
+./api/v1/router.sh

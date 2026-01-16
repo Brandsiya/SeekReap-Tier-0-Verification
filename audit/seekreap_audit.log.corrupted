@@ -1,0 +1,66 @@
+{
+  "event_id": "c3b13f9e1e41b44bca1568f3783d6655",
+  "subject_type": "creative",
+  "subject_id": "test_123",
+  "rule_id": "brand_safety",
+  "rule_version": "1.2.0",
+  "evaluation_result": "pass",
+  "evidence_hash": "d482046aaaa191f9e870bf806197da90695225485da251a595ff7d9710bf04d1",
+  "timestamp_utc": "2026-01-06T19:58:19Z",
+  "system_version": "3.1.0"
+}
+{
+  "event_id": "2e18f24405b8a36a549153cd130c8477",
+  "subject_type": "advertiser",
+  "subject_id": "advertiser_456",
+  "rule_id": "policy_compliance",
+  "rule_version": "2.1.0",
+  "evaluation_result": "fail",
+  "evidence_hash": "800dd1e350d43b259a49f07ac8557783ab3360db206183d7b1c8b48f5d8ff324",
+  "timestamp_utc": "2026-01-06T19:58:19Z",
+  "system_version": "3.1.0"
+}
+{
+  "event_id": "de2cadadb2b5e6fa6a074f76c27152ca",
+  "subject_type": "creative",
+  "subject_id": "test_123",
+  "rule_id": "brand_safety",
+  "rule_version": "1.2.0",
+  "evaluation_result": "pass",
+  "evidence_hash": "2d95ed1b76db76f7b809909242404b3cdea7e906dfe427e40004b869125459a2",
+  "timestamp_utc": "2026-01-06T19:58:19Z",
+  "system_version": "3.1.0"
+}
+{
+  "event_id": "93cc19a0dd0f31bcf8c77c35c4e628d4",
+  "subject_type": "creative",
+  "subject_id": "test_123",
+  "rule_id": "brand_safety",
+  "rule_version": "1.2.0",
+  "evaluation_result": "pass",
+  "evidence_hash": "479d887990e14bb7d40282b624391f757bb3fd81ece3ec59b1eb388467a0c003",
+  "timestamp_utc": "2026-01-06T19:59:29Z",
+  "system_version": "3.1.0"
+}
+{
+  "event_id": "5ebae695e855cc0101287053146b99ad",
+  "subject_type": "creative",
+  "subject_id": "creative_789",
+  "rule_id": "brand_safety",
+  "rule_version": "1.2.0",
+  "evaluation_result": "pass",
+  "evidence_hash": "880664839b6e7263b66eda46c1f17bf35971f938be5b80f055913a13c5f5f2da",
+  "timestamp_utc": "2026-01-06T19:59:29Z",
+  "system_version": "3.1.0"
+}
+{
+  "event_id": "8599bd16f3f44c99345583c2d1d876d6",
+  "subject_type": "campaign",
+  "subject_id": "campaign_999",
+  "rule_id": "delivery_rules",
+  "rule_version": "1.0.0",
+  "evaluation_result": "conditional",
+  "evidence_hash": "ad1f293b2dbcf429b810bb5e3e827ada0cbe14f7a7f7420e4ce97bdebca0aa3b",
+  "timestamp_utc": "2026-01-06T20:05:11Z",
+  "system_version": "3.1.0"
+}
