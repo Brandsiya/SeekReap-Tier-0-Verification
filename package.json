@@ -1,9 +1,20 @@
 {
-  "name": "seekreap-tier0-root",
+  "name": "seekreap-tier0",
   "version": "1.0.0",
-  "private": true,
-  "description": "Root package for Render deployment",
+  "description": "SeekReap Tier 0 - Deterministic boundary verification",
+  "main": "server.js",
+  "bin": {
+    "seekreap-tier0": "./cli.js"
+  },
   "scripts": {
-    "postinstall": "echo 'Root install complete'"
+    "start": "node server.js",
+    "test": "node cli.js verify examples/basic/basic-policy.json",
+    "verify": "node cli.js verify"
+  },
+  "dependencies": {
+    "commander": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

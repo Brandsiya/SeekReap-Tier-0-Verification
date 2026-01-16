@@ -1,7 +1,15 @@
-# SeekReap Tier 0 - Render Deployment
+# SeekReap
 
-This repository is structured for Render deployment.
+**Open Source Tier 0 Boundary Verification System**
 
-All source code is in the `src/` directory.
+## Quick Start
 
-**Live URL:** https://seekreap-tier0-verification.onrender.com
+```bash
+# Install dependencies
+npm install
+
+# Test installation
+node cli.js --version
+
+# Verify an example
+node cli.js verify examples/basic/basic-policy.json

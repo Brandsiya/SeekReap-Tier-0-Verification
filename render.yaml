@@ -2,7 +2,6 @@ services:
   - type: web
     name: seekreap-tier0-verification
     env: node
-    rootDirectory: src
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /
