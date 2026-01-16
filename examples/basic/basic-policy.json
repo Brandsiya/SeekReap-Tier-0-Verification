@@ -1,0 +1,15 @@
+{
+  "policy": {
+    "name": "Basic Access Policy",
+    "version": "1.0.0",
+    "description": "Simple policy example",
+    "rules": [
+      {
+        "id": "rule-1",
+        "type": "file_check",
+        "path": "README.md",
+        "action": "verify_exists"
+      }
+    ]
+  }
+}

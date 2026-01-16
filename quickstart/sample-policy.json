@@ -1,0 +1,14 @@
+{
+  "policy": {
+    "name": "QuickStart Sample",
+    "description": "Get started with Tier 0 verification",
+    "version": "0.1.0",
+    "rules": [
+      {
+        "id": "quick-check",
+        "type": "file_check",
+        "path": "package.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "seekreap-tier0-verification",
+  "version": "1.0.0",
+  "description": SeekReap Tier 0 Verification (OSS Pilot) - Reference implementation of deterministic boundary verification",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "./build.sh",
+    "test": "./test-tier0.sh"
+  },
+  "keywords": ["verification", "cli", "boundary"]
+}
