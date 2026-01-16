@@ -1,20 +1,10 @@
 {
-  "name": "seekreap-tier0",
+  "name": "seekreap-tier0-root",
   "version": "1.0.0",
-  "description": "SeekReap Tier 0 - Deterministic boundary verification",
-  "main": "server.js",
-  "bin": {
-    "seekreap-tier0": "./cli.js"
-  },
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "test": "node cli.js verify examples/basic/basic-policy.json",
-    "verify": "node cli.js verify"
-  },
-  "dependencies": {
-    "commander": "^7.2.0"
-  },
-  "engines": {
-    "node": ">=14.0.0"
+    "start": "cd src && node server.js",
+    "install": "cd src && npm install",
+    "test": "cd src && npm test"
   }
 }
