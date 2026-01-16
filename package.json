@@ -1,11 +1,22 @@
 {
   "name": "seekreap-tier0-verification",
   "version": "1.0.0",
-  "description": SeekReap Tier 0 Verification (OSS Pilot) - Reference implementation of deterministic boundary verification",
+  "description": "SeekReap Tier 0 Verification (OSS Pilot) - Reference implementation of deterministic boundary verification",
   "main": "dist/cli.js",
   "scripts": {
     "build": "./build.sh",
-    "test": "./test-tier0.sh"
+    "test": "./test-tier0.sh",
+    "verify": "./verify_update.sh",
+    "start": "node dist/cli.js --help"
   },
-  "keywords": ["verification", "cli", "boundary"]
+  "keywords": ["verification", "cli", "boundary", "seekreap", "tier0"],
+  "author": "SeekReap OSS Team",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brandsiya/SeekReap-Tier-0-Verification.git"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
 }
