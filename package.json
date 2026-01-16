@@ -2,12 +2,12 @@
   "name": "seekreap-tier0",
   "version": "1.0.0",
   "description": "SeekReap Tier 0 - Deterministic boundary verification",
-  "main": "cli.js",
+  "main": "server.js",
   "bin": {
     "seekreap-tier0": "./cli.js"
   },
   "scripts": {
-    "start": "node cli.js --version",
+    "start": "node server.js",
     "test": "node cli.js verify examples/basic/basic-policy.json",
     "verify": "node cli.js verify"
   },
