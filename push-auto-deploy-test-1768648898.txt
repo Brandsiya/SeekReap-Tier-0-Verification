@@ -1,0 +1,18 @@
+=============================
+Test Time: $(date)
+
+PURPOSE: Verify GitHub pushes trigger auto-deploy
+
+OBSERVATIONS SO FAR:
+1. Changing Render settings triggers auto-deploy ✓
+2. Spinner and "cancel deploy" appear automatically ✓
+
+THIS TEST:
+1. Push this file to GitHub
+2. Render should auto-deploy within 60 seconds
+3. Deployment should be "Triggered by GitHub"
+
+EXPECTED RESULT:
+ Render Events tab shows new deployment
+ Deployment source: "GitHub" or "Webhook"
+ Deployment status: Success
