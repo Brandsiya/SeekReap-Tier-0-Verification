@@ -8,3 +8,6 @@ else
     npm install
 fi
 """
+
+[agent]
+expertMode = true
