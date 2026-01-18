@@ -1,0 +1,24 @@
+{
+  "name": "seekreap-tier0",
+  "version": "1.1.0",
+  "description": "SeekReap Tier 0 - Deterministic Verification Kernel (Frozen)",
+  "main": "cli.js",
+  "scripts": {
+    "test": "node test.js",
+    "verify": "node cli.js --version",
+    "build": "echo 'Tier 0 is frozen - no build required'"
+  },
+  "keywords": ["verification", "deterministic", "frozen"],
+  "author": "SeekReap",
+  "license": "SEE LICENSE IN LICENSE",
+  "tier": 0,
+  "status": "frozen",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": ["cli.js", "README.md", "LICENSE", "examples/"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seekreap/SeekReap-Tier-0-Verification"
+  }
+}
