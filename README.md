@@ -16,7 +16,7 @@ node cli.js --help
 ## 📋 Overview
 
 **Version:** 1.1.0  
-**Status:** FROZEN  
+**Status:** ACTIVE DEVELOPMENT  
 **Tier:** 0 (OSS Pilot)  
 **Distribution:** Source only  
 
@@ -26,11 +26,11 @@ Tier 0 establishes the **declarative foundation** for SeekReap:
 - ✅ Declares deterministic verification intent
 - ✅ Establishes CLI interface pattern
 - ✅ Defines canonical documentation structure
-- ✅ Freezes baseline for Tier 1+ evolution
+- ✅ Provides baseline for Tier 1+ evolution
 
 ## ❗ Important Notes
 
-- **Frozen**: No features will be added to Tier 0
+- **Active**: Features may be added to Tier 0 during pilot phase
 - **Declarative**: States intent, not implementation
 - **CLI-only**: No SDK, no API, no programmatic interface
 - **Local**: No network calls during Tier 0 execution
@@ -43,12 +43,15 @@ Tier 0 establishes the **declarative foundation** for SeekReap:
 3. **SETUP.md** - Setup instructions
 4. This README.md - Quick reference
 
-## 🚀 Next Steps
+## 🚀 Development Status
 
-1. Push to GitHub
-2. Configure Render auto-deploy
-3. Begin Tier 1 development
+Tier 0 is currently in **active development** as part of the OSS Pilot phase.
 
----
+**Next Milestone:** Tier 0 feature completion and freeze declaration.
 
-*Tier 0 is complete. All development moves to Tier 1 (Managed Cloud).*
+## 🔄 Relationship to Tier 1
+
+Tier 1 (Managed Cloud) will build upon Tier 0 concepts:
+- Tier 0 defines the verification pattern
+- Tier 1 implements the actual verification engine
+- Tier 1 will maintain compatibility with Tier 0 outputs
