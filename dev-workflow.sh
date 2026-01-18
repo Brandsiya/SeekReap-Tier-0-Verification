@@ -1,22 +1,21 @@
 #!/bin/bash
-echo "🔧 SEEKREAP DEVELOPMENT WORKFLOW"
-echo "================================"
+echo "🔧 SEEKREAP DEVELOPMENT WORKFLOW - MANUAL MODE"
+echo "============================================="
 
-# Pull latest from GitHub
-echo "1. 📥 Pulling latest from GitHub..."
-git pull origin master
-
-# Install dependencies
-echo "2. 📦 Installing dependencies..."
-npm install
-
-# Run tests
-echo "3. 🧪 Running tests..."
-npm test
-
-echo "✅ Ready for development!"
+echo "⚠️  IMPORTANT: UserLand is primary development platform"
+echo "   Replit is for viewing/testing only"
 echo ""
-echo "📝 Commands:"
-echo "  git add . && git commit -m 'message'"
-echo "  git push origin master"
-echo "  npm run verify"
+
+echo "📋 CORRECT WORKFLOW:"
+echo "1. Code in UserLand"
+echo "2. git add . && git commit -m 'message'"
+echo "3. git push origin master"
+echo "4. Render auto-deploys"
+echo ""
+
+echo "🔄 To sync Replit (manual only):"
+echo "   git pull origin master"
+echo ""
+
+echo "✅ Current git status:"
+git status
