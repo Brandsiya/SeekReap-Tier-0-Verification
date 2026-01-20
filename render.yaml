@@ -2,6 +2,7 @@ services:
   - type: web
     name: seekreap-tier0
     env: static
+    rootDir: .
     buildCommand: |
       echo "🔄 Building SeekReap Tier 0..."
       echo "✅ Build completed successfully"
