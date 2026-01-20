@@ -25,6 +25,7 @@
 ## Legal
 13. `SEEKREAP-TIER0-FROZEN-LICENSE` - Source-available license
 14. `LICENSE.md` - License clarification (read this first)
+14. `LICENSE.md` - License clarification (read this first)
 
 ## Terminology Lock
 - **Policy Logic**: CLI-consumable patterns only
