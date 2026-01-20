@@ -39,7 +39,7 @@
 - Governance boundary examples
 
 ### Q: Why are there CLI tools in a frozen repository?
-**A**: The CLI tools (`cli.js`, `verify_tier0.sh`) are **frozen reference implementations**. They demonstrate how Tier 0 concepts should be implemented, but are not for active use.
+**A**: The CLI specification defines interface requirements for Tier 1+ implementations. They demonstrate how Tier 0 concepts should be implemented, but are not for active use.
 
 ### Q: What license applies?
 **A**: Tier 0 uses a custom "Frozen Foundation License" that allows reference and implementation but prohibits modification of the frozen foundation.
