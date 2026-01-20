@@ -1,0 +1,50 @@
+name: Tier 0 Issue
+description: Documentation or deterministic behavior issues ONLY
+title: "[Tier 0] "
+labels: ["tier0-only"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      description: Select the category that best fits
+      options:
+        - Documentation
+        - Deterministic Output Issue
+        - Example Clarification
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Clearly describe the issue.
+        
+        **REMINDER:** Tier 0 is FROZEN. Issues requesting features, APIs, SDKs, or verification engines will be closed.
+      placeholder: |
+        Example: "On page X, the documentation says Y, but it should say Z..."
+        Example: "When running command A, I get output B, but the spec says it should be C..."
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "OS: Ubuntu 22.04, Node.js: 18.17.0"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have read the CONTRIBUTING.md and FAQ.md files
+          required: true
+        - label: I understand this issue relates ONLY to Tier 0's frozen documentation or deterministic behavior
+          required: true
+        - label: This is NOT a feature request for verification, APIs, SDKs, or integrations
+          required: true

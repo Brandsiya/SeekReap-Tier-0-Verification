@@ -62,20 +62,3 @@ Tier 1 implements verification compatible with Tier 0 patterns.
 git clone https://github.com/Brandsiya/SeekReap-Tier-0-Verification
 cd SeekReap-Tier-0-Verification
 node cli.js --version
-
-## Governance & Interaction
-Tier 0 is a **frozen foundation** with specific governance:
-
-| Document | Purpose |
-|----------|---------|
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Defines what contributions are accepted (and rejected) |
-| [FAQ.md](FAQ.md) | Answers common questions about Tier 0's scope |
-| [ROADMAP.md](ROADMAP.md) | High-level vision (Tier 0 is frozen, innovation in Tier 1+) |
-| [CONTACT.md](CONTACT.md) | For Tier 1+ inquiries (commercial, partnerships, etc.) |
-
-**Key Boundary:** Tier 0 is source-available and frozen. All feature requests, commercial inquiries, and verification engine discussions belong to **Tier 1+**.
-
-## Quick Links
-- [Master Index](MASTER_INDEX.md) - All canonical documentation
-- [Freeze Announcement](FREEZE_ANNOUNCEMENT.md) - Official freeze declaration
-- [Verification Script](./verify_tier0.sh) - Verify your installation
