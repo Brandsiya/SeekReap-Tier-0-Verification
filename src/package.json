@@ -4,7 +4,7 @@
   "description": "SeekReap Tier 0 - Immutable declarative foundation for deterministic verification systems",
   "main": "cli.js",
   "scripts": {
-    "start": "exit 0",
+    "start": "node server.js",
     "test": "echo 'Tests passed' && exit 0",
     "build": "echo 'Build successful' && exit 0"
   },
