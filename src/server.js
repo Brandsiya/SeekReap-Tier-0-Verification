@@ -61,6 +61,7 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   console.log(`✅ SeekReap Tier 0 Documentation Server running on port ${PORT}`);
   console.log(`📚 Version: 1.1.0 | Status: FROZEN`);
+  console.log(`🌐 Documentation available at: http://localhost:${PORT}`);
 });
 
 // Keep the server running forever
