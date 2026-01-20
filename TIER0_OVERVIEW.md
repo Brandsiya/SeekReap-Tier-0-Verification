@@ -47,3 +47,10 @@ Tier 0 is intentionally minimal to:
 - Enable deterministic foundation
 - Allow clean Tier 1+ evolution
 - Prevent scope creep
+
+## Deployment Status
+**Tier 0 is non-deployable by design.**
+
+Any cloud deployment, hosting configuration, or network exposure is **out of scope** and invalidates Tier 0 compliance.
+
+Deployment artifacts belong **exclusively** to Tier 1+.
