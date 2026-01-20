@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "Example Policy",
+  "description": "Tier 0 declarative example",
+  "checks": [
+    {
+      "id": "example.check",
+      "description": "Example check declaration",
+      "path": "example.value",
+      "rule": "equals",
+      "expected": true
+    }
+  ]
+}

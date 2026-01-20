@@ -1,72 +1,54 @@
 # SeekReap Tier 0 (OSS Pilot)
 
-## 🚨 STATUS: COMPLETE (PRE-FREEZE)
+## 🏁 Quick Start
+
+\`\`\`bash
+# Verify installation
+node cli.js --version
+
+# Run tests
+npm test
+
+# Show help
+node cli.js --help
+\`\`\`
+
+## 📋 Overview
+
 **Version:** 1.1.0  
+**Status:** FROZEN  
 **Tier:** 0 (OSS Pilot)  
 **Distribution:** Source only  
-**License:** MIT  
-**Status:** Complete, pending final review before freeze
 
-## 🎯 What is Tier 0?
-Tier 0 is the **immutable declarative foundation** for SeekReap verification systems. It establishes:
-- ✅ **Deterministic patterns** for verification
-- ✅ **CLI interface specification**
-- ✅ **Canonical documentation structure**
-- ✅ **Clear boundaries** for Tier 1+ evolution
+## 🎯 Purpose
 
-## 📚 Documentation Structure
-### **Core Documentation:**
-1. [`MASTER_INDEX.md`](MASTER_INDEX.md) - Architecture and navigation
-2. [`TIER0_OVERVIEW.md`](TIER0_OVERVIEW.md) - Scope and objectives
-3. [`TIER_BOUNDARY_CONTRACT.md`](TIER_BOUNDARY_CONTRACT.md) - Evolution rules
+Tier 0 establishes the **declarative foundation** for SeekReap:
+- ✅ Declares deterministic verification intent
+- ✅ Establishes CLI interface pattern
+- ✅ Defines canonical documentation structure
+- ✅ Freezes baseline for Tier 1+ evolution
 
-### **User Guides:**
-4. [`TIERO_INSTALLATION.md`](TIERO_INSTALLATION.md) - Installation instructions
-5. [`TIERO_QUICKSTART.md`](TIERO_QUICKSTART.md) - Getting started
-6. [`TIERO_CLI_REFERENCE.md`](TIERO_CLI_REFERENCE.md) - CLI command reference
+## ❗ Important Notes
 
-### **Strategic Context:**
-7. [`TIERO_POSITIONING.md`](TIERO_POSITIONING.md) - Strategic positioning
-8. [`SETUP.md`](SETUP.md) - Contributor setup
-
-## 🛠️ Implementation
-### **Core Components:**
-- [`cli.js`](cli.js) - CLI interface (v1.1.0)
-- [`package.json`](package.json) - Dependencies
-- [`test.js`](test.js) - Verification tests
-
-### **Verification Scripts:**
-- [`verify_tier0.sh`](verify_tier0.sh) - Structural verification
-- [`verify_tier0_final.sh`](verify_tier0_final.sh) - Final verification
-- [`verify_final_clean.sh`](verify_final_clean.sh) - Clean state verification
-- [`complete_tier0.sh`](complete_tier0.sh) - Complete verification flow
-
-### **Build System:**
-- [`build.sh`](build.sh) - Distribution build script
-
-## 📂 Examples
-### **Policy Examples:**
-- [`examples/basic/basic-policy.json`](examples/basic/basic-policy.json) - Basic policy structure
-- [`examples/advanced/advanced-policy.json`](examples/advanced/advanced-policy.json) - Advanced enterprise patterns
-
-## ❗ Boundaries (To Be Frozen)
+- **Frozen**: No features will be added to Tier 0
+- **Declarative**: States intent, not implementation
 - **CLI-only**: No SDK, no API, no programmatic interface
-- **Local execution**: No network calls, no external dependencies
+- **Local**: No network calls during Tier 0 execution
 - **Deterministic**: Outputs contain no timestamps
-- **Immutable**: No features added post-freeze
-- **Source-only**: No hosted service, no deployment (publicly)
 
-## 🔄 Relationship to Tier 1+
-**For all development, issues, and features:**
-- **Tier 1 Repository:** [SeekReap Tier 1 (Managed Cloud)](https://github.com/seekreap/seekreap-tier1-managed)
-- **Tier 0 is complete** and will not change
-- **All evolution happens in Tier 1+**
+## 📚 Documentation Hierarchy
 
-Tier 1 implements verification compatible with Tier 0 outputs.
+1. **MASTER_INDEX.md** - Canonical source of truth
+2. **TIER0_OVERVIEW.md** - Scope and objectives
+3. **SETUP.md** - Setup instructions
+4. This README.md - Quick reference
 
-## 📚 Quick Start
-```bash
-git clone https://github.com/Brandsiya/SeekReap-Tier-0-Verification
-npm install
-node cli.js --version
-node test.js
+## 🚀 Next Steps
+
+1. Push to GitHub
+2. Configure Render auto-deploy
+3. Begin Tier 1 development
+
+---
+
+*Tier 0 is complete. All development moves to Tier 1 (Managed Cloud).*
