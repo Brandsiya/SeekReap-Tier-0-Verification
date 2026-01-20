@@ -79,3 +79,9 @@ Tier 0 is a **frozen foundation** with specific governance:
 - [Master Index](MASTER_INDEX.md) - All canonical documentation
 - [Freeze Announcement](FREEZE_ANNOUNCEMENT.md) - Official freeze declaration
 - [Verification Script](./verify_tier0.sh) - Verify your installation
+
+## Implementation Examples
+Reference implementations demonstrating Tier 0 patterns are available in the 
+`/reference-implementations/` directory. These are frozen examples only - all 
+active development occurs in Tier 1+.
+
