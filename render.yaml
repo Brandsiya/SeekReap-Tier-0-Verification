@@ -1,11 +1,11 @@
 services:
-  - type: web
-    name: seekreap-tier0
+  - type: static
+    name: seekreap-tier0-docs
     env: static
     buildCommand: |
-      echo "✅ SeekReap Tier 0 build successful"
-    staticPublishPath: .
+      echo "✅ SeekReap Tier 0 documentation site built successfully"
+    staticPublishPath: ./src
     routes:
       - type: rewrite
         source: /*
-        destination: /README.md
+        destination: /index.html
