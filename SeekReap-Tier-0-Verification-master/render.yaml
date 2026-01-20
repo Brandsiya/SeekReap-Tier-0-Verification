@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: seekreap-tier0-docs
+    env: node
+    buildCommand: |
+      echo "🔨 Building SeekReap Tier 0 documentation..."
+      cd src
+      npm install
+    startCommand: npm start
+    staticPublishPath: null

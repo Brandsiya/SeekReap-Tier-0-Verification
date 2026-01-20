@@ -1,0 +1,5 @@
+node_modules/
+backup_docs/
+*.backup
+test_small.md
+.git/
