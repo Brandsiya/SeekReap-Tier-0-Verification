@@ -36,4 +36,21 @@
 - No deployment or hosting configuration
 - No commercial use or modification
 
+## Governance
+
+14. `CONTRIBUTING.md` - Contribution boundaries (frozen tier)
+15. `FAQ.md` - Frequently asked questions
+16. `ROADMAP.md` - High-level vision (informational)
+17. `CONTACT.md` - Tier 1+ inquiry redirection
+18. `FREEZE_ANNOUNCEMENT.md` - Official freeze declaration
+19. `.github/ISSUE_TEMPLATE/tier0_issue.yml` - Issue template
+
+## Governance Philosophy
+Tier 0 is **frozen by design**. These governance documents exist to:
+- Protect the frozen boundary from scope creep
+- Redirect contributors, investors, and companies appropriately
+- Manage all interaction via GitHub without external pressure
+
+**Rule:** All innovation begins at Tier 1+.
+
 **This index is authoritative. Start here.**
