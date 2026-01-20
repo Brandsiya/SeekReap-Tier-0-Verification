@@ -1,53 +1,39 @@
-# SeekReap Tier 0 — Master Index
+# MASTER INDEX (SeekReap Tier 0)
 
-## AUTHORITATIVE SOURCE OF TRUTH
-This document is the canonical index of all Tier 0 resources.
+**Canonical Entry Point** for all Tier 0 documentation.
 
-## CANONICAL STRUCTURE
-\`\`\`
-SeekReap-Tier-0-Verification/
- cli.js              # Frozen CLI interface
- package.json        # Package definition (frozen)
- test.js            # Test suite
- LICENSE            # License
- README.md          # Primary documentation
- MASTER_INDEX.md    # This file (canonical index)
- TIER0_OVERVIEW.md  # Scope and objectives
- SETUP.md           # Setup instructions
- examples/          # Example files
-\`\`\`
+## Core Documentation
+1. `TIER0_OVERVIEW.md` - Boundary definition and FREEZE status
+2. `TIER0_INSTALLATION.md` - Installation instructions (source-only)
+3. `TIER0_QUICKSTART.md` - Quick start guide
+4. `TIER0_CLI_REFERENCE.md` - CLI reference (frozen interface)
 
-## TIER 0 SCOPE (FROZEN)
+## Supporting Documentation
+5. `README.md` - Project overview
+6. `TIER_BOUNDARY_CONTRACT.md` - Tier evolution rules
+7. `CONTRIBUTING.md` - Validation and verification guide
 
-### IN SCOPE ✓
-- CLI interface declaration
-- Deterministic intent declaration
-- Frozen state declaration
-- Canonical documentation structure
+## Implementation
+8. `cli.js` - CLI interface (v1.1.0, frozen)
+9. `package.json` - Dependencies (Node.js 18+ only)
+10. `test.js` - Verification tests
+11. `verify_tier0.sh` - Structural verification
 
-### OUT OF SCOPE ✗
-- Actual verification engine (Tier 1+)
-- Dashboards / UI
-- Hosted services
-- Network communication
-- Telemetry
-- SDK/API interfaces
+## Examples
+12. `examples/pattern/declarative-shape.json` - Example declarative structure
 
-## DETERMINISM GUARANTEE
-Tier 0 declares the intent for deterministic verification.
-Tier 1+ implements the actual deterministic engine.
+## Legal
+13. `SEEKREAP-TIER0-FROZEN-LICENSE` - Source-available license
 
-## FREEZE DECLARATION
-**EFFECTIVE:** 2026-01-18
-**STATUS:** FROZEN
-**VERSION:** 1.1.0
-**TIER:** 0
+## Terminology Lock
+- **Policy Logic**: CLI-consumable patterns only
+- **No SDKs**, no external APIs, no network calls
+- **Deterministic**: No timestamps, no runtime configuration
 
-No changes will be made to Tier 0.
-All development moves to Tier 1.
+## Out of Scope (Tier 1+)
+- No dashboards, UI, or web components
+- No verification engine implementation
+- No deployment or hosting configuration
+- No commercial use or modification
 
-## BOUNDARY CONTRACT
-1. Tier 0 outputs contain no timestamps
-2. Tier 0 has CLI-only interface
-3. Tier 0 executes locally only
-4. Tier 1+ must extend, not break, Tier 0 declarations
+**This index is authoritative. Start here.**

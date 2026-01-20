@@ -1,0 +1,19 @@
+{
+  "description": "Example declarative structure showing the pattern Tier 0 defines",
+  "pattern": "policy-declaration",
+  "version": "tier0-example",
+  "elements": {
+    "metadata": {
+      "type": "declarative-only",
+      "function": "pattern-demonstration"
+    },
+    "rules": [
+      {
+        "id": "example-rule-1",
+        "condition": "demonstration-only",
+        "action": "no-operation"
+      }
+    ]
+  },
+  "note": "This is NOT a functional policy. It demonstrates the JSON structure pattern that Tier 1+ would verify."
+}

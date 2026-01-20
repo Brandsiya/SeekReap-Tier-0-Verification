@@ -1,14 +1,10 @@
-# SeekReap Tier 0 - Installation Guide
+# SeekReap Tier 0 Installation
 
-## 🚀 Quick Install
+ **IMPORTANT**: Tier 0 is source-only. There are no binaries, packages, or distributions.
 
-### Prerequisites
-- Node.js 18+ (LTS)
-- Git
+## Source Installation
 
-### Installation Methods
-
-#### **Method 1: Clone from GitHub**
+1. Clone the repository:
 ```bash
-git clone https://github.com/Brandsiya/SeekReap-Tier-0-Verification
-cd SeekReap-Tier-0-Verification
+git clone https://github.com/seekreap/seekreap-tier0.git
+cd seekreap-tier0
