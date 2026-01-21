@@ -1,8 +1,8 @@
 # SeekReap Tier 0: Frozen Specification & Governance
 
-**Status**: 🧊 PERMANENTLY FROZEN  
-**Purpose**: Canonical documentation & governance foundation  
-**License**: Source-available frozen license (see [LICENSE](LICENSE))  
+**Status**: 🧊 PERMANENTLY FROZEN
+**Purpose**: Canonical documentation & governance foundation
+**License**: Source-available frozen license (see [LICENSE](LICENSE))
 **Boundary**: All implementation belongs to **Tier 1+**
 
 ## Overview
@@ -16,7 +16,6 @@ Tier 0 is the **permanently frozen** specification layer of the SeekReap verific
 **Key Boundary**: Tier 0 is source-available and frozen. All feature requests, commercial inquiries, and verification engine discussions belong to **Tier 1+**.
 
 ## Canonical Documentation
-
 | Document | Purpose |
 |----------|---------|
 | [MASTER_INDEX.md](MASTER_INDEX.md) | All canonical documentation |
@@ -36,7 +35,6 @@ Tier 0 is the **permanently frozen** specification layer of the SeekReap verific
 ## Quick Links
 - [Master Index](MASTER_INDEX.md) - All canonical documentation
 - [Freeze Announcement](FREEZE_ANNOUNCEMENT.md) - Official freeze declaration
-
 ## Governance Structure
 - **Tier 0**: Frozen specification (this repository)
 - **Tier 1+**: Active implementation (separate repositories)

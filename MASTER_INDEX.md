@@ -1,7 +1,6 @@
 # Master Index: Tier 0 Canonical Documentation
-
-**Version**: 1.6.0 (Perfect Canonical)  
-**Status**: PERMANENTLY FROZEN  
+**Version**: 1.6.0 (Perfect Canonical)
+**Status**: PERMANENTLY FROZEN
 **Purpose**: Central index for all Tier 0 specification documents
 
 ## Core Documentation
@@ -35,7 +34,6 @@
 
 ### Frozen Examples
 The `/examples/` directory contains frozen specification patterns that demonstrate **WHAT** should be implemented in Tier 1+.
-
 ### GitHub Governance
 The `/.github/` directory contains GitHub-specific governance configuration for Tier 0 administration.
 
@@ -46,7 +44,6 @@ The `/.github/` directory contains GitHub-specific governance configuration for 
 - **Content**: Documentation only (no implementation)
 - **Status**: Permanently frozen
 - **License**: Frozen Foundation License
-
 ### Tier 1+ (Implementation Repositories)
 - **Purpose**: Active implementation and development
 - **Content**: Code, tests, build configuration
@@ -60,7 +57,6 @@ The `/.github/` directory contains GitHub-specific governance configuration for 
 - Governance boundaries (WHERE innovation can happen)
 - Reference patterns (EXAMPLES of what to implement)
 - Administrative configuration (HOW to manage the frozen state)
-
 ### What Tier 0 Does NOT Contain
 - Implementation code
 - Build configuration
