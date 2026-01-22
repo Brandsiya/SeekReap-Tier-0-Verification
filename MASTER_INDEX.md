@@ -82,3 +82,16 @@ The `/.github/` directory contains GitHub-specific governance configuration for 
 ---
 
 *This index is part of the frozen Tier 0 specification. All innovation moves to Tier 1+.*
+
+## 📋 Issue Resolution Records
+
+| Document | Purpose | Status |
+|:---------|:--------|:-------|
+| [.github/ISSUES/](.github/ISSUES/) | Tier 0 issue resolution records | ✅ Active |
+| [TIER0_ISSUE_PROTOCOL.md](TIER0_ISSUE_PROTOCOL.md) | Issue resolution protocol | 🧊 Frozen |
+
+### Issue Resolution Status
+- **7 issues resolved** with Tier 0 protocol
+- **6 ACCEPTED** (administrative improvements)
+- **1 REJECTED** (CLI testing - belongs to Tier 1+)
+- **Status**: ✅ COMPLETE

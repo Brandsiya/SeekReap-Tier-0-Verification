@@ -1,0 +1,3 @@
+## RESOLUTION: ACCEPTED
+Issue: README clarity
+Status: CLOSED
