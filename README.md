@@ -21,12 +21,8 @@ Tier 0 is the **permanently frozen** specification layer of the SeekReap verific
 | [MASTER_INDEX.md](MASTER_INDEX.md) | All canonical documentation |
 | [TIER0_OVERVIEW.md](TIER0_OVERVIEW.md) | Tier 0 overview and purpose |
 | [TIER_BOUNDARY_CONTRACT.md](TIER_BOUNDARY_CONTRACT.md) | Defines evolution rules / Tier boundaries |
-| [TIER0_QUICKSTART.md](TIER0_QUICKSTART.md) | Quickstart guide |
-| [TIER0_CLI_REFERENCE.md](TIER0_CLI_REFERENCE.md) | CLI interface documentation (frozen) |
-| [TIER0_INSTALLATION.md](TIER0_INSTALLATION.md) | Installation guide |
 | [ROADMAP.md](ROADMAP.md) | High-level vision (Tier 0 is frozen, innovation in Tier 1+) |
 | [FREEZE_ANNOUNCEMENT.md](FREEZE_ANNOUNCEMENT.md) | Official freeze declaration |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Rules for contributions (Tier 0 frozen) |
 | [CONTACT.md](CONTACT.md) | For Tier 1+ inquiries (commercial, partnerships, etc.) |
 | [FAQ.md](FAQ.md) | Frequently Asked Questions |
 | [GITHUB_LABELS.md](GITHUB_LABELS.md) | Guidance for GitHub labels setup |
