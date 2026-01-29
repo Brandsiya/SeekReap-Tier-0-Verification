@@ -8,7 +8,7 @@ No document outside this list has Tier-0 authority.
 
 ## Canonical Tier-0 Documents
 
-1. `README.md`  
+1. (./README.md) 
    Entry point and protocol declaration
 
 2. `TIER0_OVERVIEW.md`  
