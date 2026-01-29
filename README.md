@@ -57,7 +57,7 @@ All such material belongs to **Tier 1 or higher**.
 
 | Document | Role |
 |--------|------|
-| `MASTER_INDEX.md` | Canonical index of all Tier-0 documents |
+| [MASTER_INDEX.md] | (./Canonical index of all Tier-0 documents) |
 | `TIER0_OVERVIEW.md` | Definition of Tier-0 purpose and scope |
 | `TIER_BOUNDARY_CONTRACT.md` | Formal boundary between Tier-0 and higher tiers |
 | `FREEZE_ANNOUNCEMENT.md` | Permanent immutability invariant |
