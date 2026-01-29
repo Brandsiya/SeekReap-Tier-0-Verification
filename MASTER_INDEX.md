@@ -8,14 +8,10 @@ No document outside this list has Tier-0 authority.
 
 ## Canonical Tier-0 Documents
 
-1. ['README.md']
-   (./Entry point and protocol declaration)
+1. ['README.md'](./README.md)
+   Entry point and protocol declaration
 
-   - [`TIER0_OVERVIEW.md`](./TIER0_OVERVIEW.md) ghhhfd
-  
-9- [`TIER_BOUNDARY_CONTRACT.md`](./TIER_BOUNDARY_CONTRACT.md)
-- [`FREEZE_ANNOUNCEMENT.md`](./FREEZE_ANNOUNCEMENT.md)
-- [`LICENSE`](./LICENSE)
+2. [`TIER0_OVERVIEW.md`](./TIER0_OVERVIEW.md)
 
 3. `TIER0_OVERVIEW.md`  
    Purpose, scope, and rationale of Tier 0
