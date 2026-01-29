@@ -1,21 +1,47 @@
-# License Information
+# SEEKREAP TIER-0 PROTOCOL REFERENCE LICENSE (v1.0)
 
-## Primary License
-This repository uses the **`SEEKREAP-TIER0-FROZEN-LICENSE`** (found in the root directory).
+## 1. Scope
 
-## Important Clarifications
-- **Not OSI-Approved**: This is a **source-available** license, not OSI-approved open source.
-- **Frozen Tier**: The license applies specifically to **Tier 0**, which is frozen and immutable.
-- **Commercial Use**: Commercial use, hosted services, or derivative products require separate licensing for Tier 1+.
-- **Deterministic Only**: The license permits inspection, learning, and local execution only.
+This license governs the **SeekReap Tier-0 Protocol Specification** (the “Specification”).
 
-## Relationship to Tier 1+
-Tier 1 and beyond will use standard OSI-approved licenses (e.g., Apache 2.0, MIT) for operational code.
+The Specification is a **normative, permanently frozen reference document** and is **not software**.
 
-## Quick Reference
-- **Tier 0 (This repo)**: Source-available, frozen foundation
-- **Tier 1+ (Separate)**: OSI-approved open source, operational
-- **Boundary**: Tier 0 defines *what*; Tier 1 defines *how*
+---
 
-## For Legal Review
-Corporate legal teams should review the full `SEEKREAP-TIER0-FROZEN-LICENSE` file for exact terms.
+## 2. Permitted Acts
+
+You may:
+
+- View, download, and study the Specification
+- Audit and reference the Specification for research, education, or security review
+- Redistribute the **unmodified Specification verbatim**, with clear attribution
+
+---
+
+## 3. Restrictions
+
+You may not:
+
+- Modify, fork, or publish derivative versions of the Specification
+- Re-license the Specification under different terms
+- Misrepresent modified documents as the canonical SeekReap Tier-0 Specification
+
+---
+
+## 4. Implementation Boundary
+
+Implementations that conform to this Specification are **not derivative works** of the Specification and are governed by their **own licenses**.
+
+---
+
+## 5. Ownership
+
+Copyright in the Specification text remains with the Author.
+
+This license grants **no rights** over trademarks, service marks, or implementation code.
+
+---
+
+## 6. No Warranty
+
+The Specification is provided **“as is”**, without warranty of any kind, express or implied.
