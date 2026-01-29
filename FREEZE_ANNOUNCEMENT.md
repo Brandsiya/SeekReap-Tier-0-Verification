@@ -6,7 +6,7 @@
 **Canonical Files:** 13
 
 ## Overview
-SeekReap Tier 0 is now **officially frozen** as a purely declarative, source-only OSS pilot.
+SeekReap Tier 0 is now **officially frozen** as a purely declarative, Reference-Only Protocol.
 
 This tier represents a **stable, immutable foundation** for the SeekReap verification ecosystem. It is:
 - CLI-only
