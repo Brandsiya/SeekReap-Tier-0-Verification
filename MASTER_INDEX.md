@@ -10,25 +10,18 @@
 |----------|---------|--------|
 | [TIER0_OVERVIEW.md](TIER0_OVERVIEW.md) | Tier 0 overview and purpose | Frozen |
 | [TIER_BOUNDARY_CONTRACT.md](TIER_BOUNDARY_CONTRACT.md) | Defines evolution rules between tiers | Frozen |
-| [TIER0_CLI_REFERENCE.md](TIER0_CLI_REFERENCE.md) | CLI interface specification | Frozen |
-| [TIER0_QUICKSTART.md](TIER0_QUICKSTART.md) | Quickstart guide for implementers | Frozen |
-| [TIER0_INSTALLATION.md](TIER0_INSTALLATION.md) | Installation requirements specification | Frozen |
 
 ### Governance & Administration
 | Document | Purpose | Status |
 |----------|---------|--------|
 | [LICENSE](LICENSE) | Source-available frozen license | Frozen |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution rules (Tier 0 frozen) | Frozen |
 | [FREEZE_ANNOUNCEMENT.md](FREEZE_ANNOUNCEMENT.md) | Official freeze declaration | Frozen |
-| [GITHUB_LABELS.md](GITHUB_LABELS.md) | GitHub labels and administration | Frozen |
 
 ### Communication & Reference
 | Document | Purpose | Status |
 |----------|---------|--------|
 | [README.md](README.md) | Main repository overview | Frozen |
 | [ROADMAP.md](ROADMAP.md) | Evolution roadmap (innovation in Tier 1+) | Frozen |
-| [CONTACT.md](CONTACT.md) | Communication guidelines | Frozen |
-| [FAQ.md](FAQ.md) | Frequently Asked Questions | Frozen |
 
 ## Canonical Structure
 
