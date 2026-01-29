@@ -23,9 +23,6 @@ Tier 0 is the **permanently frozen** specification layer of the SeekReap verific
 | [TIER_BOUNDARY_CONTRACT.md](TIER_BOUNDARY_CONTRACT.md) | Defines evolution rules / Tier boundaries |
 | [ROADMAP.md](ROADMAP.md) | High-level vision (Tier 0 is frozen, innovation in Tier 1+) |
 | [FREEZE_ANNOUNCEMENT.md](FREEZE_ANNOUNCEMENT.md) | Official freeze declaration |
-| [CONTACT.md](CONTACT.md) | For Tier 1+ inquiries (commercial, partnerships, etc.) |
-| [FAQ.md](FAQ.md) | Frequently Asked Questions |
-| [GITHUB_LABELS.md](GITHUB_LABELS.md) | Guidance for GitHub labels setup |
 | [LICENSE](LICENSE) | Source-available frozen license (Tier 0) |
 
 ## Quick Links
