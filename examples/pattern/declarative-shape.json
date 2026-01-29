@@ -1,19 +1,33 @@
 {
-  "description": "Example declarative structure showing the pattern Tier 0 defines",
-  "pattern": "policy-declaration",
-  "version": "tier0-example",
-  "elements": {
-    "metadata": {
-      "type": "declarative-only",
-      "function": "pattern-demonstration"
-    },
-    "rules": [
-      {
-        "id": "example-rule-1",
-        "condition": "demonstration-only",
-        "action": "no-operation"
+  "example_scope": "non-normative",
+  "example_purpose": "structural-illustration-only",
+  "example_identity": "tier0-illustrative-shape",
+  "example_version": "undefined",
+
+  "abstract_structure": {
+    "placeholder_group": {
+      "placeholder_unit": {
+        "label": "example-only",
+        "meaning": "intentionally-unspecified"
       }
-    ]
+    }
   },
-  "note": "This is NOT a functional policy. It demonstrates the JSON structure pattern that Tier 1+ would verify."
+
+  "constraints": [
+    {
+      "constraint_id": "illustrative-constraint",
+      "constraint_nature": "non-semantic",
+      "constraint_effect": "none"
+    }
+  ],
+
+  "disclaimer": {
+    "authority": "none",
+    "normative_weight": "zero",
+    "execution_semantics": "absent",
+    "format_binding": "none",
+    "implementation_implication": "this example does not define, require, or recommend any concrete structure or behavior"
+  },
+
+  "note": "This artifact exists solely to illustrate that Tier 0 defines abstract invariants that may be represented declaratively. The representation shown here is incidental and non-authoritative. Implementations must derive structure exclusively from normative specification text."
 }
