@@ -1,33 +1,45 @@
-# SeekReap Tier 0 Freeze Announcement 🚀
+# Tier 0 Freeze Invariant
 
-**Status:** Tier 0 — FROZEN  
-**Version:** 1.1.0  
-**License:** SEEKREAP-TIER0-FROZEN-LICENSE  
-**Canonical Files:** 13
+## Declaration
 
-## Overview
-SeekReap Tier 0 is now **officially frozen** as a purely declarative, Reference-Only Protocol.
+SeekReap Tier 0 is **permanently frozen**.
 
-This tier represents a **stable, immutable foundation** for the SeekReap verification ecosystem. It is:
-- CLI-only
-- Deterministic (no timestamps)
-- Local execution only
-- Non-deployable (no cloud, hosting, or network exposure)
-- Source-available under the Tier 0 license
-
-## What This Freeze Means
-- **No further changes** to Tier 0 interface or files.
-- **No SDKs, APIs, or dashboards.**
-- Ensures a **deterministic foundation** for the Tier 1 verification engine.
-- Protects against **scope creep or deployment artifacts.**
-
-## Next Steps
-- Tier 1 will introduce the **verification engine** and optional cloud integration.
-- Future tiers will add dashboards, SDKs, and extensions.
-- All Tier 0 canonical files remain untouched and authoritative.
-
- Tier 0 is frozen. Ready for Tier 1 evolution.
+This is a protocol-level invariant, not a policy decision.
 
 ---
 
-*Published by the SeekReap OSS pilot team — maintaining a stable foundation for verifiable policy logic.*
+## Meaning of Frozen
+
+“Frozen” means:
+- No document may be altered
+- No new documents may be added
+- No existing document may be removed
+- No semantic reinterpretation is permitted
+
+---
+
+## Enforcement Model
+
+This freeze is enforced by:
+- License restrictions
+- Canonical indexing
+- External conformance checks
+- Social and legal immutability
+
+There is no internal override mechanism.
+
+---
+
+## Evolution Rule
+
+Any evolution of SeekReap:
+- MUST occur in Tier-1 or higher
+- MUST NOT retroactively affect Tier-0
+
+Tier-0 remains a stable reference point across all time.
+
+---
+
+## Finality
+
+This invariant is irrevocable.
