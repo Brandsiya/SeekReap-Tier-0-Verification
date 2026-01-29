@@ -12,7 +12,7 @@ No document outside this list has Tier-0 authority.
    (./Entry point and protocol declaration)
 
    - [`TIER0_OVERVIEW.md`](./TIER0_OVERVIEW.md) ghhhfd
-- [`TIER_BOUNDARY_CONTRACT.md`](./TIER_BOUNDARY_CONTRACT.md)
+9- [`TIER_BOUNDARY_CONTRACT.md`](./TIER_BOUNDARY_CONTRACT.md)
 - [`FREEZE_ANNOUNCEMENT.md`](./FREEZE_ANNOUNCEMENT.md)
 - [`LICENSE`](./LICENSE)
 
