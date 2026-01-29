@@ -8,19 +8,24 @@ No document outside this list has Tier-0 authority.
 
 ## Canonical Tier-0 Documents
 
-1. ['(./README.md)']
-   Entry point and protocol declaration
+1. ['README.md']
+   (./Entry point and protocol declaration)
 
-2. `TIER0_OVERVIEW.md`  
+   - [`TIER0_OVERVIEW.md`](./TIER0_OVERVIEW.md)
+- [`TIER_BOUNDARY_CONTRACT.md`](./TIER_BOUNDARY_CONTRACT.md)
+- [`FREEZE_ANNOUNCEMENT.md`](./FREEZE_ANNOUNCEMENT.md)
+- [`LICENSE`](./LICENSE)
+
+3. `TIER0_OVERVIEW.md`  
    Purpose, scope, and rationale of Tier 0
 
-3. `TIER_BOUNDARY_CONTRACT.md`  
+4. `TIER_BOUNDARY_CONTRACT.md`  
    Formal separation between tiers
 
-4. `FREEZE_ANNOUNCEMENT.md`  
+5. `FREEZE_ANNOUNCEMENT.md`  
    Permanent immutability invariant
 
-5. `LICENSE`  
+6. `LICENSE`  
    SeekReap Tier-0 Protocol Reference License v1.0
 
 ---
