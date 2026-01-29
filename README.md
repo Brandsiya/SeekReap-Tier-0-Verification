@@ -1,47 +1,96 @@
-# SeekReap Tier 0: Frozen Specification & Governance
+# SeekReap Tier 0 — Protocol
 
-**Status**: 🧊 PERMANENTLY FROZEN
-**Purpose**: Canonical documentation & governance foundation
-**License**: Source-available frozen license (see [LICENSE](LICENSE))
-**Boundary**: All implementation belongs to **Tier 1+**
+## Status
+**PERMANENTLY FROZEN · NORMATIVE SPECIFICATION**
 
-## Overview
-Tier 0 is the **permanently frozen** specification layer of the SeekReap verification system. It defines:
+## Purpose
+SeekReap Tier 0 defines the **canonical protocol specification** for the SeekReap system.
 
-- **WHAT** the system is (specification)
-- **HOW** it should behave (requirements)
-- **WHERE** boundaries exist (governance)
-- **WHY** evolution happens (roadmap)
+It establishes:
+- What **must be true**
+- What **cannot change**
+- Where **boundaries exist**
+- How **authority is constrained**
 
-**Key Boundary**: Tier 0 is source-available and frozen. All feature requests, commercial inquiries, and verification engine discussions belong to **Tier 1+**.
-
-## Canonical Documentation
-| Document | Purpose |
-|----------|---------|
-| [MASTER_INDEX.md](MASTER_INDEX.md) | All canonical documentation |
-| [TIER0_OVERVIEW.md](TIER0_OVERVIEW.md) | Tier 0 overview and purpose |
-| [TIER_BOUNDARY_CONTRACT.md](TIER_BOUNDARY_CONTRACT.md) | Defines evolution rules / Tier boundaries |
-| [FREEZE_ANNOUNCEMENT.md](FREEZE_ANNOUNCEMENT.md) | Official freeze declaration |
-| [LICENSE](LICENSE) | Source-available frozen license (Tier 0) |
-
-## Quick Links
-- [Master Index](MASTER_INDEX.md) - All canonical documentation
-- [Freeze Announcement](FREEZE_ANNOUNCEMENT.md) - Official freeze declaration
-## Governance Structure
-- **Tier 0**: Frozen specification (this repository)
-- **Tier 1+**: Active implementation (separate repositories)
-- **.github/**: GitHub governance configuration
-
-## Frozen Examples
-Canonical specification patterns are available in the `/examples/` directory. These demonstrate **WHAT** patterns should be implemented in Tier 1+, not **HOW** to implement them.
-
-## License & Usage
-This repository uses a custom "Frozen Foundation License" that:
-- Allows reference and study
-- Permits implementation in Tier 1+
-- Prohibits modification of Tier 0
-- Requires attribution
+Tier 0 does **not** define behavior, execution, tooling, or implementation details.
 
 ---
 
-*Tier 0: Defines the rules. Tier 1+: Builds the system.*
+## Protocol Nature
+
+SeekReap Tier 0 is:
+
+- **Normative** — defines invariants and contracts
+- **Deterministic** — no ambiguity or probabilistic interpretation
+- **Canonical** — single authoritative reference
+- **Immutable** — permanently frozen once published
+- **Implementation-agnostic** — no “how”, only “what”
+
+Conformance is evaluated externally.  
+Tier 0 itself performs no execution or validation.
+
+---
+
+## Scope Boundary
+
+**Tier 0 contains ONLY:**
+- Protocol definitions
+- Governance invariants
+- Authority constraints
+- Boundary contracts
+- Canonical documentation
+- Reference-only license
+
+**Tier 0 explicitly excludes:**
+- Executable code
+- CLI or tooling references
+- Installation or onboarding instructions
+- Contribution workflows
+- Operational guidance
+- Commercial or competitive logic
+
+All such material belongs to **Tier 1 or higher**.
+
+---
+
+## Canonical Documents
+
+| Document | Role |
+|--------|------|
+| `MASTER_INDEX.md` | Canonical index of all Tier-0 documents |
+| `TIER0_OVERVIEW.md` | Definition of Tier-0 purpose and scope |
+| `TIER_BOUNDARY_CONTRACT.md` | Formal boundary between Tier-0 and higher tiers |
+| `FREEZE_ANNOUNCEMENT.md` | Permanent immutability invariant |
+| `LICENSE` | SeekReap Tier-0 Protocol Reference License v1.0 |
+
+---
+
+## License Alignment
+
+Tier 0 is governed by the **SeekReap Tier-0 Protocol Reference License (v1.0)**.
+
+Key principles:
+- The specification text is licensed
+- Implementations are **not** derivative works
+- Commercial use is unrestricted at the implementation level
+- The canonical specification cannot be modified or re-issued
+
+---
+
+## Authority Statement
+
+Any system claiming to be “SeekReap-compatible” MUST:
+- Conform to this specification
+- Respect Tier boundaries
+- Avoid redefining or extending Tier-0 semantics
+
+Tier-0 itself has no execution authority.
+
+---
+
+## Finality Notice
+
+Tier-0 is sealed.  
+No extensions, revisions, or amendments are permitted within this tier.
+
+All evolution occurs strictly in **Tier-1 and above**.
