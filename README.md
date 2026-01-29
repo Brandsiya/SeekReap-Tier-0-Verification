@@ -21,7 +21,6 @@ Tier 0 is the **permanently frozen** specification layer of the SeekReap verific
 | [MASTER_INDEX.md](MASTER_INDEX.md) | All canonical documentation |
 | [TIER0_OVERVIEW.md](TIER0_OVERVIEW.md) | Tier 0 overview and purpose |
 | [TIER_BOUNDARY_CONTRACT.md](TIER_BOUNDARY_CONTRACT.md) | Defines evolution rules / Tier boundaries |
-| [ROADMAP.md](ROADMAP.md) | High-level vision (Tier 0 is frozen, innovation in Tier 1+) |
 | [FREEZE_ANNOUNCEMENT.md](FREEZE_ANNOUNCEMENT.md) | Official freeze declaration |
 | [LICENSE](LICENSE) | Source-available frozen license (Tier 0) |
 
