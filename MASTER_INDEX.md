@@ -21,7 +21,6 @@
 | Document | Purpose | Status |
 |----------|---------|--------|
 | [README.md](README.md) | Main repository overview | Frozen |
-| [ROADMAP.md](ROADMAP.md) | Evolution roadmap (innovation in Tier 1+) | Frozen |
 
 ## Canonical Structure
 
