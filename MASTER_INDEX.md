@@ -9,11 +9,11 @@ No document outside this list has Tier-0 authority.
 ## Canonical Tier-0 Documents
 
 1. [README.md](./README.md)
+
    Entry point and protocol declaration
 
-2. [`TIER0_OVERVIEW.md`](./TIER0_OVERVIEW.md)
+2. [TIER0_OVERVIEW.md](./TIER0_OVERVIEW.md)
 
-3. `TIER0_OVERVIEW.md`  
    Purpose, scope, and rationale of Tier 0
 
 4. `TIER_BOUNDARY_CONTRACT.md`  
